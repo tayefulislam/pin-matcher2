@@ -39,3 +39,24 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
     }
 
 })
+
+// verify pin 
+
+function verifyPin() {
+
+    const generatePin = document.getElementById('genarate-input').value;
+    const typedPin = document.getElementById('display-input').value;
+    const success = document.getElementById('success');
+    const fail = document.getElementById('fail');
+
+    if (generatePin == typedPin && generatePin != "") {
+        success.style.display = 'block';
+        fail.style.display = 'none';
+    }
+    else {
+        success.style.display = 'none'
+        fail.style.display = 'block'
+    }
+
+}
+

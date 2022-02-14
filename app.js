@@ -10,6 +10,7 @@ function getPin() {
         return getPin();
     }
 }
+
 function generatePin() {
     let getGenerateInput = document.getElementById('genarate-input');
     getGenerateInput.value = getPin();
